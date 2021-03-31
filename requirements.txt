@@ -1,5 +1,8 @@
 pycaret==1.0.0
 streamlit
 nltk
+stopwords
+punkt
+WordNetLemmatizer()
 stanza
 gensim
