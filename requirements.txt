@@ -1,0 +1,5 @@
+pycaret==1.0.0
+streamlit
+nltk
+stanza
+gensim
