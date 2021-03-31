@@ -2,7 +2,6 @@ pycaret==1.0.0
 streamlit
 nltk
 stopwords
-punkt
 wordnet
 stanza
 gensim
