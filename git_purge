@@ -1,0 +1,3 @@
+heroku plugins:install heroku-repo
+heroku repo:gc --app mi-net
+heroku repo:purge_cache --app mi-net
