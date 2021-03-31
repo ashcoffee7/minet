@@ -3,6 +3,6 @@ streamlit
 nltk
 stopwords
 punkt
-WordNetLemmatizer()
+wordnet
 stanza
 gensim
