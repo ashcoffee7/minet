@@ -1,3 +1,4 @@
-heroku plugins:install heroku-repo
-heroku repo:gc --app mi-net
-heroku repo:purge_cache --app mi-net
+$ heroku repo:purge_cache -a appname
+$ heroku repo:gc -a appname
+$ heroku repo:purge_cache -a appname
+$ heroku repo:reset -a appname
