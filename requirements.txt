@@ -6,3 +6,4 @@ wordnet
 stanza
 gensim
 catboost
+Cython==0.28.5
