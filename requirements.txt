@@ -5,3 +5,4 @@ stopwords
 wordnet
 stanza
 gensim
+catboost
