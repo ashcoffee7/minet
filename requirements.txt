@@ -7,3 +7,4 @@ stanza
 gensim
 catboost
 Cython==0.28.5
+numpy==1.11.0
