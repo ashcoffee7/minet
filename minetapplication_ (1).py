@@ -1,6 +1,5 @@
 import pycaret
 from pycaret.regression import load_model, predict_model
-install streamlit
 import streamlit as st
 
 from pycaret.classification import load_model
