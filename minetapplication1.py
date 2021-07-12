@@ -14,7 +14,7 @@ from pycaret.regression import load_model, predict_model
 import streamlit as st
 
 from pycaret.classification import load_model
-model = load_model('knn7')
+model = load_model('knn7.pkl')
 
 def predict(model, input_df):
   predictions_df = predict_model(estimator=model, data=input_df)
