@@ -7,5 +7,4 @@ stanza
 gensim
 catboost
 numpy
-Cython
 scikit-learn
