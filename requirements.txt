@@ -7,5 +7,5 @@ stanza
 gensim
 catboost
 numpy
-Cython==0.29.21
+Cython
 scikit-learn
