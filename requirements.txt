@@ -8,3 +8,4 @@ gensim
 catboost
 numpy
 scikit-learn
+pandas==1.2.5
