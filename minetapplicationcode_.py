@@ -22,7 +22,7 @@ def predict(model, input_df):
 
 def run():
   from PIL import Image
-  image = Image.open('/content/drive/MyDrive/minetlogo.JPG')
+  image = Image.open('minetlogo.JPG')
   st.image(image, use_column_width = False)
   st.sidebar.info('MINet: A Novel Telemedicine Tool for Automatically Assessing Motivational Interviewing (MI) Conversations Using Natural Language Processing')
 
