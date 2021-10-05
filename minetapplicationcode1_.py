@@ -13,10 +13,6 @@ import pycaret
 from pycaret.regression import load_model, predict_model
 import streamlit as st
 
-
-
-drive.mount('/content/drive')
-
 from pycaret.classification import load_model
 model = load_model('knn')
 
