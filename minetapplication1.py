@@ -27,11 +27,13 @@ def run():
   st.image(image,use_column_width = False)
   st.sidebar.info('MINet: A Novel Telemedicine Tool for Automatically Assessing Motivational Interviewing (MI) Conversations Using Natural Language Processing')
 
-import pycontractions
+from pycontractions import contractions
+cont = Contractions('GoogleNews-vectors-negative300.bin')
+cont.load_models()
 file_upload = st.file_uploader('Upload Transcript for Rating +  Feedback. Ensure they are in PDF/TXT form and the counselor and patient portions are indicated with "c:" and "p:" at the beginning of every line.', type=["txt","pdf"])
 if file_upload is not None:
   file_contents2 = file_upload.read()
-  ru = pycontractions.fix(file_contents2)
+  ru = cont.expand_texts(file_contents2)
   yu = ru.lower()
 
   # preprocessing
