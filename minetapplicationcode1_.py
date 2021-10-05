@@ -15,7 +15,6 @@ import streamlit as st
 
 
 
-from google.colab import drive
 drive.mount('/content/drive')
 
 from pycaret.classification import load_model
@@ -28,9 +27,9 @@ def predict(model, input_df):
 
 def run():
   from PIL import Image
-  image = Image.open('/content/drive/MyDrive/minetlogo.JPG')
+  image = Image.open('minetlogo.JPG')
   st.image(image, use_column_width = False)
-  st.sidebar.info('MINet: A Novel Telemedicine Tool for Automatically Assessing Motivational Interviewing (MI) Conversations Using Natural Language Processing')
+  st.sidebar.info('MINet: A Novel Telemedicine Tool for Automagtically Assessing Motivational Interviewing (MI) Conversations Using Natural Language Processing')
 
 import contractions
 
@@ -195,4 +194,8 @@ if file_upload is not None:
     if coherence_lda3 <= 0.265:
       st.success = ("Your MI conversation needs to make the topics of your conversation (specifically, the issues of the patient) more defined. Do not just offer general advice - cater your comments to the situation of the patient.")
     if jaccardsim <= 0.23:
-      st.success = ("Your comments in the MI conversation needs to model the patient's word usage a little better. For example, if they say that drinking makes them feel less anxious, model their comments by saying 'So drinking makes you feel less anxious, and that's why you continue to do it.' Confirm their feelings.")
+      st.success = ("Your comments in the MI conversation needs to model the patient's word usage a little better. For example, if they say that drinking makes them feel less anxious, model their comments by saying 'So drinking makes you feel less anxious, and that's why you continue to do it.' Confirm their feelings.')
+
+
+if __name__ == '__main__':
+    run()
