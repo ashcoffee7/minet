@@ -26,13 +26,13 @@ def run():
   st.image(image, use_column_width = False)
   st.sidebar.info('MINet: A Novel Telemedicine Tool for Automatically Assessing Motivational Interviewing (MI) Conversations Using Natural Language Processing')
 
-import contractions
+  import contractions
 
-file_upload = st.file_uploader('Upload Transcript for Rating +  Feedback. Ensure they are in PDF/TXT form and the counselor and patient portions are indicated with "c:" and "p:" at the beginning of every line.', type=["txt","pdf"])
-if file_upload is not None:
-  file_contents2 = file_upload.read()
-  ru = contractions.fix(file_contents2)
-  yu = ru.lower()
+  file_upload = st.file_uploader('Upload Transcript for Rating +  Feedback. Ensure they are in PDF/TXT form and the counselor and patient portions are indicated with "c:" and "p:" at the beginning of every line.', type=["txt","pdf"])
+  if file_upload is not None:
+    file_contents2 = file_upload.read()
+    ru = contractions.fix(file_contents2)
+    yu = ru.lower()
 
   # preprocessing
   import nltk
@@ -188,3 +188,5 @@ if file_upload is not None:
       st.success = ("Your MI conversation needs to make the topics of your conversation (specifically, the issues of the patient) more defined. Do not just offer general advice - cater your comments to the situation of the patient.")
     if jaccardsim <= 0.23:
       st.success = ("Your comments in the MI conversation needs to model the patient's word usage a little better. For example, if they say that drinking makes them feel less anxious, model their comments by saying 'So drinking makes you feel less anxious, and that's why you continue to do it.' Confirm their feelings.")
+    
+   run()
