@@ -11,7 +11,6 @@ Original file is located at
 
 import pycaret
 from pycaret.regression import load_model, predict_model
-!pip install streamlit
 import streamlit as st
 
 
