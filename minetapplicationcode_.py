@@ -42,7 +42,7 @@ def run():
   removed = ['c', ':', 't', '.', '?', '!', ',']
   stopwords.extend(removed)
 
-  z = nltk.work_tokenize(yu)
+  z = nltk.word_tokenize(yu)
   z2 = [word for word in z if word not in stopwords]
 
   nltk.download('wordnet')
