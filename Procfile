@@ -1,1 +1,1 @@
-web: sh setup.sh && steamlit run minetapplication1.py
+web: sh setup.sh && steamlit run minetapplicationcode_.py
