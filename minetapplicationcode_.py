@@ -12,11 +12,6 @@ import pycaret
 from pycaret.regression import load_model, predict_model
 import streamlit as st
 
-
-
-from google.colab import drive
-drive.mount('/content/drive')
-
 from pycaret.classification import load_model
 model = load_model('knn')
 
