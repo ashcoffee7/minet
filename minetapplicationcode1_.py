@@ -9,7 +9,6 @@ Original file is located at
 # **App - Streamlit + Pycaret**
 """
 
-!pip install pycaret
 import pycaret
 from pycaret.regression import load_model, predict_model
 !pip install streamlit
