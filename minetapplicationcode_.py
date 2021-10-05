@@ -189,4 +189,5 @@ def run():
     if jaccardsim <= 0.23:
       st.success = ("Your comments in the MI conversation needs to model the patient's word usage a little better. For example, if they say that drinking makes them feel less anxious, model their comments by saying 'So drinking makes you feel less anxious, and that's why you continue to do it.' Confirm their feelings.")
     
-   run()
+if __name__ == '__main__':
+    run()
