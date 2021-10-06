@@ -12,6 +12,8 @@ Original file is located at
 import pycaret
 from pycaret.regression import load_model, predict_model
 import streamlit as st
+import nltk
+nltk.download('punkt')
 
 from pycaret.classification import load_model
 model = load_model('knn7')
