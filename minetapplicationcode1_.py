@@ -58,7 +58,7 @@ if file_upload is not None:
                 "R": wordnet.ADV}
 
     return tag_dict.get(tag, wordnet.NOUN)
-  nltk.stem import WordNetLemmatizer
+  from nltk.stem import WordNetLemmatizer
   lemmatizer = WordNetLemmatizer()
   for word in z2:
     qu = ((lemmatizer.lemmatize(word, get_wordnet_pos(word))))
