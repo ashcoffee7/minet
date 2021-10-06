@@ -71,6 +71,5 @@ if file_upload is not None:
   wordcount3 = len(yu.split())
 
 
-  if st.button("Predict"):
-    print (wordcount3)
+st.success(wordcount3)
     
