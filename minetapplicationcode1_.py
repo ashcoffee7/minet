@@ -70,10 +70,10 @@ if file_upload is not None:
   # word length
   wordcount3 = len(yu.split())
 
-  print (wordcount3)
 
   if st.button("Predict"):
-    output = predict(model=model, input_df=input_df)
+    print (wordcount3)
+    """output = predict(model=model, input_df=input_df)
     if output==1:
       output="HIGH"
       st.success = ("Your MI conversations have a" + output + "quality")
