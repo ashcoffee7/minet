@@ -73,27 +73,4 @@ if file_upload is not None:
 
   if st.button("Predict"):
     print (wordcount3)
-    """output = predict(model=model, input_df=input_df)
-    if output==1:
-      output="HIGH"
-      st.success = ("Your MI conversations have a" + output + "quality")
-    if output==0:
-      output="LOW"
-      st.success = ("Your MI conversations have a" + output + "quality")
-  
-  if st.button("Feedback"):
-    if wordcount3 >= 1200:
-      st.success = ("Your MI conversation needs to be longer, drawing out more of the complexities in patient's destructive habits.")
-    if negativesentiment <= 0.5 and positivesentiment>=0.15 and neutralsentiment>=0.45:
-      st.success = ("Your MI conversation needs to emphasize the more negative aspects of patient's problems - allow them to emphasize their emotions - try more open-ended questions. Ensure that you're not using excessive affirmations or reassurance.")
-    if wordratio <= 10:
-      st.success = ("Your MI conversation needs to include more input from you. While you need to ensure that your patients are describing their problems and feelings, you must also offer advice and reassurance.")
-    if coherence_lda3 <= 0.265:
-      st.success = ("Your MI conversation needs to make the topics of your conversation (specifically, the issues of the patient) more defined. Do not just offer general advice - cater your comments to the situation of the patient.")
-    if jaccardsim <= 0.23:
-      st.success = ("Your comments in the MI conversation needs to model the patient's word usage a little better. For example, if they say that drinking makes them feel less anxious, model their comments by saying 'So drinking makes you feel less anxious, and that's why you continue to do it.' Confirm their feelings.")
-
-
-if __name__ == '__main__':
-    run()
-"""
+    
