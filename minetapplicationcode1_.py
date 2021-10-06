@@ -31,8 +31,9 @@ import contractions
 
 file_upload = st.file_uploader('Upload Transcript for Rating +  Feedback. Ensure they are in PDF/TXT form and the counselor and patient portions are indicated with "c:" and "p:" at the beginning of every line.', type=["txt","pdf"])
 if file_upload is not None:
-  fu = file_upload.read()
-  file_contents2 = fu
+  fu = str(file_upload)
+  fu2 = fu.read()
+  file_contents2 = fu2
   file_upload.close()
   ru = contractions.fix(file_contents2)
   yu = ru.lower()
