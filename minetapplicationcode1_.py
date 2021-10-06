@@ -70,6 +70,8 @@ if file_upload is not None:
   # word length
   wordcount3 = len(yu.split())
 
+if __name__ == '__main__':
+    run()
 
 st.success(wordcount3)
     
